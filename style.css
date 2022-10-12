@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+header{
+    margin: auto;
+    padding: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    box-shadow:rgba(218, 165, 32, 0.443) 0px 4px 12px;
+}
+
+.search{
+    background-color: transparent;
+    border: 2px solid goldenrod;
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color:gray;
+    font-family: inherit;
+}
+
+.search:focus{
+    outline:0;
+    background-color: white;
+}
+
+.search::placeholder{
+    color: rgba(218, 165, 32, 0.388);
+}
+.logooh{
+    width: 10%;
+}
+
+main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.movie {
+    width: 200px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(255, 255, 255, 0.42);
+    background-color: goldenrod;
+    position:relative;
+    overflow: hidden;
+}
+
+
+.movie img{
+    width:100%;
+}
+
+.movie-info{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span{
+    background-color: black;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.blue{
+    color:lightskyblue;
+}
+
+.movie-info span.green{
+    color:greenyellow;
+}
+
+.movie-info span.orange{
+    color:orange;
+}
+
+
+.no-results{
+    color:white;
+}
+
+.pagination{
+    display:flex;
+    margin:10px 30px;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+.page{
+    padding:20px;
+    cursor:pointer;
+}
+
+.page.disabled{
+    cursor:not-allowed;
+    color:grey;
+}
+
+.current{
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 5px solid goldenrod;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
